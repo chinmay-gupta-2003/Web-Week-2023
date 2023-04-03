@@ -1,7 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .align-center {
   text-align: center;
   color: #343a40;
   font-size: 60px;
+  margin-top: 40px;
 }
 
 .item {
@@ -10,6 +17,7 @@
   font-size: 40px;
   padding: 50px;
   border-radius: 10px;
+  font-weight: 700;
 }
 
 .container-1 {
@@ -17,20 +25,51 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  margin: 40px;
+  padding: 40px;
+  background-color: #38d9a9;
+  border-radius: 10px;
 }
 
 .container-2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 150px 200px;
+  grid-template-columns: 200px 400px 300px;
+  height: 600px;
   row-gap: 20px;
   column-gap: 40px;
+  margin: 40px;
+  padding: 40px;
+  background-color: #343a40;
+  border-radius: 10px;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 3fr 2fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container-1 {
+  background-image: linear-gradient(to right, #38d9a9, #69db7c);
+  background-image: url(./CSS-tutorial.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 h2 {
   display: inline-block;
-  background-image: linear-gradient(to right, pink, #f1425d);
+  background-image: linear-gradient(to right, rgb(255, 132, 153), #ff3352);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  transition: all 0.3s;
+}
+
+h2:hover {
+  display: inline-block;
+  transform: skewX(-10deg) scale(1.12);
 }
